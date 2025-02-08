@@ -41,6 +41,19 @@ public class GoogleBooksServiceTest {
     }
 
     @Test
+    void testBookTitleHarryPotterPedraFilosofal() {
+        var response = googleBooksService.getBooks("harry potter");
+
+        StepVerifier.create(response)
+                .assertNext(result -> {
+                    assertNotNull(result);
+                    assertTrue(result.contains("Harry Potter e a Pedra Filosofal"), "O título do livro não está correto");
+                })
+                .expectComplete()
+                .verify();
+    }
+
+    @Test
     void testBookAuthors() {
         var response = googleBooksService.getBooks("harry potter");
 
