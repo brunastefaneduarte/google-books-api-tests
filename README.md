@@ -28,3 +28,26 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
+
+
+## Como Executar
+
+### Requisitos
+
+Antes de executar o projeto, certifique-se de que o **Java 11** ou superior e o **Gradle** estão instalados na sua máquina.
+
+### Passos
+
+1. Clone este repositório para sua máquina local:
+   ```bash
+   git clone https://github.com/brunastefaneduarte/google-api-test.git
+
+Navegue até o diretório do projeto:
+
+```bash
+cd google-api-test
+
+./gradlew bootRun
+
+./gradlew test
+
