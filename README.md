@@ -29,8 +29,7 @@ dependencies {
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
-
-## Como Executar
+ # Como executar
 
 ### Requisitos
 
@@ -39,15 +38,17 @@ Antes de executar o projeto, certifique-se de que o **Java 11** ou superior e o 
 ### Passos
 
 1. Clone este repositório para sua máquina local:
-   ```bash
+ 
    git clone https://github.com/brunastefaneduarte/google-api-test.git
 
-Navegue até o diretório do projeto:
+2. Navegue até o diretório do projeto:
 
-```bash
-cd google-api-test
+    cd google-api-test
 
-./gradlew bootRun
+3. Execute a build do projeto 
 
-./gradlew test
+    ./gradlew bootRun
+
+4. Execute os testes
+    ./gradlew test
 
